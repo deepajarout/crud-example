@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>desciption</th>
+                    <th>created_at</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each userData}}
+                <tr>
+                    <td>{{this.tittle}}</td>
+                    <td>{{this.description}}</td>
+                    <td>{{this.created_at}}</td>
+                    
+                    <td>
+                        <a href="/users/{{this._id}}">Edit</a>
+                        <a href="/users/{{this._id}}/delete">Delete</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <a class="btn btn-primary btn-lg" href="/users/create" role="button">
+            Add New User &raquo;
+        </a>
+    </div>
+</div>

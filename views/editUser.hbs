@@ -1,0 +1,16 @@
+
+<form action="/users/{{user._id}}" method="POST">
+    
+     <label for="usertittle">tittle</label>
+    <input type="text" name="usertittle" value="{{this.tittle}}">
+    <br>
+
+
+    <label for="userdescription">description</label>
+    <input type="text" name="userdescription" value="{{this.description}}">
+   
+
+    <button>Update</button> <a href="/users">Cancel</a>
+    
+</form>
+
